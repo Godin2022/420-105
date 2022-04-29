@@ -1,0 +1,122 @@
+﻿<!doctype html>
+<html lang="fr">
+
+<head>
+
+   <!-- Nécessaire pour validation -->
+   <meta charset="utf-8">
+
+   <!-- Titre de la page Web -->
+   <title>Laboratoire 2B</title>
+
+   <!-- Insertion d’un fichier contenant une feuille de style -->
+   <link rel="stylesheet" type="text/css" href="styleLabo2.css" />
+
+   <!-- Feuille de style locale -->
+   <!--<style type="text/css"></style>-->
+
+   <!-- Insertion d’un fichier contenant le code JavaScript -->
+   <!--<script type="text/javascript" src="script.js"></script>-->
+
+   <!-- Code JavaScript local -->
+   <!--<script type="text/javascript"></script>-->
+
+</head>
+
+<body>
+    <div id="divEntete" class="sTexteCentre sLargeurDiv sEntete">
+        <p>
+            <span class="sTitreApp">
+                Saisie des informations de base <br />
+            </span>
+            par
+            <span class="sAuteurApp">
+                Vitaly Savin
+            </span>
+        </p>
+    </div>
+    <div id="divCorps" class="sCorps sLargeurDiv">
+        <table>
+            <tr>
+                <th>
+                    Votre nom :
+                </th>
+                <td>
+                    <input id="tbNom" name="tbNom" type="text" maxlength="20" />
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Votre prénom :
+                </th>
+                <td>
+                    <input id="tbPrenom" name="tbPrenom" type="text" maxlength="15" />
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Votre âge :
+                </th>
+                <td>
+                    <input id="tbAge" name="tbAge" type="text" maxlength="2" />&nbsp;ans
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Votre sexe :
+                </th>
+                <td>
+                    <select id="ddlSexe" name="ddlSexe">
+                        <option value="">&nbsp;</option>
+                        <option value="M">Masculin</option>
+                        <option value="F">Féminin</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th rowspan="3">
+                    Votre état civil :
+                </th>
+                <td>
+                    <input id="radCelibataire" name="radEtatCivil" type="radio" value="C" checked="checked">
+                    <label for="radCelibataire">Célibataire</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="radMarie" name="radEtatCivil" type="radio" value="M">
+                    <label for="radMarie">Marié(e) ou conjoint(e) de fait</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="radDivorce" name="radEtatCivil" type="radio" value="D">
+                    <label for="radDivorce">Divorcé(e) ou séparé</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input id="btnConfirmer" name="btnConfirmer" type="button" value="Confirmer" onclick="" />
+                </td>
+            </tr>
+        </table>
+        <p id="lblResultats">
+            Affichage des informations saisies <br />
+            <span id="lblMessagePrenomEtNom"></span> <br />
+            <span id="lblMessageSexe"></span> <br />
+            <span id="lblMessageAge"></span> <br />
+            <span id="lblMessageEtatCivil"></span> <br />
+        </p>
+    </div>
+    <div id="divPiedDePage" class="PiedDePage sLargeurDiv">
+        <p>
+            <a href="http://www.cgodin.qc.ca"><img src="logoCGG.jpg" alt="logoCGG" /></a>
+            <a href="http://www.cgodin.qc.ca/programme/techniques-informatique/">Département d'informatique du Cégep Géreld-Godin</a>
+            <br />
+            &copy;2022
+        </p>
+    </div>
+    
+</body>
+
+</html>

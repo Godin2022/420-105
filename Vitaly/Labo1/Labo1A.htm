@@ -1,0 +1,78 @@
+﻿<!doctype html>
+<html lang="fr">
+
+<head>
+
+   <!-- Nécessaire pour validation -->
+   <meta charset="utf-8">
+
+   <!-- Titre de la page Web -->
+   <title>Laboratoire 1A</title>
+
+   <!-- Insertion d’un fichier contenant une feuille de style -->
+   <link rel="stylesheet" type="text/css" href="style.css" />
+
+   <!-- Feuille de style locale -->
+   <!--<style type="text/css">
+   </style>-->
+
+   <!-- Insertion d’un fichier contenant le code JavaScript -->
+   <!--<script type="text/javascript" src="script.js"></script>-->
+
+   <!-- Code JavaScript local -->
+   <!--<script type="text/javascript">
+   </script>-->
+
+</head>
+
+<body>
+    <p>Saisie des informations de base <br /> par Vitaly Savin</p>
+    <p>
+        Votre nom : &nbsp;&nbsp;&nbsp;
+        <input id="tbNom" name="tbNom" type="text" maxlength="20" />
+    </p>
+    <p>
+        Votre prénom : &nbsp;&nbsp;&nbsp;
+        <input id="tbPrenom" name="tbPrenom" type="text" maxlength="15" />
+    </p>
+    <p>
+        Votre âge : &nbsp;&nbsp;&nbsp;
+        <input id="tbAge" name="tbAge" type="text" maxlength="2" />
+    </p>
+    <p>
+        Votre sexe :  &nbsp;&nbsp;&nbsp;
+        <select id="ddlSexe" name="ddlSexe">
+            <option value="">&nbsp;</option>
+            <option value="M">Masculin</option>
+            <option value="F">Féminin</option>
+        </select>
+    </p>
+    <p>
+        Votre état civil :  &nbsp;&nbsp;&nbsp;
+        <input id="radCelibataire" name="radEtatCivil" type="radio" value="C" checked="checked">
+        <label for="radCelibataire">Célibataire</label>&nbsp;&nbsp;&nbsp;
+        <input id="radMarie" name="radEtatCivil" type="radio" value="M">
+        <label for="radMarie">Marié </label>&nbsp;&nbsp;&nbsp;
+        <input id="radDivorce" name="radEtatCivil" type="radio" value="D">
+        <label for="radDivorce">Divorcé</label>&nbsp;&nbsp;&nbsp;
+    </p>
+    <p>
+        <input id="btnConfirmer" name="btnConfirmer" type="button" value="Confirmer" onclick="" />
+    </p>
+    <p>
+        Affichage des informations saisies <br />
+        <span id="lblMessagePrenomEtNom"></span> <br />
+        <span id="lblMessageSexe"></span> <br />
+        <span id="lblMessageAge"></span> <br />
+        <span id="lblMessageEtatCivil"></span> <br />
+    </p>
+
+    <p>
+        <a href="http://www.cgodin.qc.ca"><img src="logoCGG.jpg" alt="logoCGG" /></a>
+        <a href="http://www.cgodin.qc.ca/programme/techniques-informatique/">Département d'informatique du Cégep Géreld-Godin</a>
+        <br />
+        &copy;2022
+    </p>
+</body>
+
+</html>
