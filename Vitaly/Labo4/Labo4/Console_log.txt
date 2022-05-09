@@ -1,0 +1,144 @@
+libValidationBase.js:146 estNull(56) false
+libValidationBase.js:147 estNull('56Allo') false
+libValidationBase.js:148 estNull(true) false
+libValidationBase.js:149 estNull(null) true
+libValidationBase.js:151 estDansIntervalle(6, 4, 8)) true
+libValidationBase.js:152 (estDansIntervalle(4, 4, 8)) true
+libValidationBase.js:153 estDansIntervalle(8, 4, 8)) true
+libValidationBase.js:154 (estDansIntervalle(9, 4,8)) false
+libValidationBase.js:155 estDansIntervalle(3, 4, 8)) false
+libValidationBase.js:156 (estDansIntervalle(6, 8,4)) false
+libValidationBase.js:157 (estDansIntervalle('6', 4, 8)) false
+libValidationBase.js:158 (estDansIntervalle(6, '4', 8)) false
+libValidationBase.js:159 (estDansIntervalle('d', 'a', 'z')) true
+libValidationBase.js:160 (estDansIntervalle(('d', 'e', 'z')))false
+libValidationBase.js:161 (estDansIntervalle('D', 'A', 'Z'))true
+libValidationBase.js:162 (estDansIntervalle('Jean', 'Janette', 'Julius')) true
+libValidationBase.js:164 contientSeulementUnNombre(60) doit retourner false: false
+libValidationBase.js:165 contientSeulementUnNombre(60.1) doit retourner false : false
+libValidationBase.js:166 contientSeulementUnNombre('') doit retourner false : false
+libValidationBase.js:167 contientSeulementUnNombre(' ') doit retourner false : false
+libValidationBase.js:168 contientSeulementUnNombre('60') doit retourner true : true
+libValidationBase.js:169 contientSeulementUnNombre('60s') doit retourner false : false
+libValidationBase.js:170 contientSeulementUnNombre('60.1') doit retourner true : true
+libValidationBase.js:171 contientSeulementUnNombre('Allo') doit retourner false : false
+libValidationBase.js:172 contientSeulementUnNombre('-60') doit retourner true : true
+libValidationBase.js:173 contientSeulementUnNombre('-60.1') doit retourner true : true
+libValidationBase.js:174 contientSeulementUnNombre(true) doit retourner false : false
+libValidationBase.js:176 contientSeulementUnNombreEntier('60') doit retourner true : true
+libValidationBase.js:177 contientSeulementUnNombreEntier('60.1') doit retourner false : false
+libValidationBase.js:178 contientSeulementUnNombreEntier(60) doit retourner false: false
+libValidationBase.js:179 contientSeulementUnNombreEntier(60.1) doit retourner false : false
+libValidationBase.js:180 contientSeulementUnNombreEntier('Allo') doit retourner false: false
+libValidationBase.js:181 contientSeulementUnNombreEntier('60s') doit retourner false : false
+libValidationBase.js:182 contientSeulementUnNombreEntier('-60') doit retourner true : true
+libValidationBase.js:183 contientSeulementUnNombreEntier ('-60.1') doit retourner false : false
+libValidationBase.js:184 contientSeulementUnNombreEntier('') doit retourner false: false
+libValidationBase.js:185 contientSeulementUnNombreEntier(' ') doit retourner false : false
+libValidationBase.js:186 contientSeulementUnNombreEntier(true) doit retourner false : false
+libValidationBase.js:188 estUneChaineVide(0) doit retourner false: false
+libValidationBase.js:189 estUneChaineVide(null) doit retourner false: false
+libValidationBase.js:190 estUneChaineVide('') doit retourner true: true
+libValidationBase.js:191 estUneChaineVide(' ') doit retourner false: false
+libValidationBase.js:192 estUneChaineVide('\n') doit retourner false: false
+libValidationBase.js:193 estUneChaineVide('Allo') doit retourner false: false
+libValidationBase.js:195 estUneChaineBlanche(0) doit retourner false: false
+libValidationBase.js:196 estUneChaineBlanche(' ') doit retourner true: true
+libValidationBase.js:197 estUneChaineBlanche('\n') doit retourner true: true
+libValidationBase.js:198 estUneChaineBlanche('\t') doit retourner true: true
+libValidationBase.js:199 estUneChaineBlanche('\t\n \n\t') doit retourner true: true
+libValidationBase.js:200 estUneChaineBlanche('\t\n0\n\t') doit retourner false: false
+libValidationBase.js:201 estUneChaineBlanche(' 0 ') doit retourner false: false
+libValidationBase.js:202 estUneChaineBlanche('Allo') doit retourner false: false
+libValidationBase.js:203 estUneChaineBlanche(' ') doit retourner true: true
+libValidationBase.js:204 estUneChaineBlanche(' Allo ') doit retourner false: false
+libValidationBase.js:206 estUnCaractereNumerique(0) doit retourner false: false
+libValidationBase.js:207 estUnCaractereNumerique(null) doit retourner false: false
+libValidationBase.js:208 estUnCaractereNumerique(6) doit retourner false: false
+libValidationBase.js:209 estUnCaractereNumerique(61) doit retourner false: false
+libValidationBase.js:210 estUnCaractereNumerique('') doit retourner false: false
+libValidationBase.js:211 estUnCaractereNumerique ('6') doit retourner true: true
+libValidationBase.js:212 estUnCaractereNumerique('-6') doit retourner false: false
+libValidationBase.js:213 estUnCaractereNumerique ('61') doit retourner false: false
+libValidationBase.js:214 estUnCaractereNumerique('D') doit retourner false: false
+libValidationBase.js:215 estUnCaractereNumerique ('6D') doit retourner false: false
+libValidationBase.js:217 estUnCaractereAlpha(0) doit retourner false: false
+libValidationBase.js:218 estUnCaractereAlpha(null) doit retourner false: false
+libValidationBase.js:219 estUnCaractereAlpha(6) doit retourner false: false
+libValidationBase.js:220 estUnCaractereAlpha(true) doit retourner false: false
+libValidationBase.js:221 estUnCaractereAlpha('') doit retourner false: false
+libValidationBase.js:222 estUnCaractereAlpha('6') doit retourner false: false
+libValidationBase.js:223 estUnCaractereAlpha('d') doit retourner true: true
+libValidationBase.js:224 estUnCaractereAlpha('a') doit retourner true: true
+libValidationBase.js:225 estUnCaractereAlpha('D') doit retourner true: true
+libValidationBase.js:226 estUnCaractereAlpha('ZD') doit retourner false: false
+libValidationBase.js:227 estUnCaractereAlpha('Z') doit retourner true: true
+libValidationBase.js:228 estUnCaractereAlpha('z') doit retourner true: true
+libValidationBase.js:229 estUnCaractereAlpha(',') doit retourner false: false
+libValidationBase.js:230 estUnCaractereAlpha(' $') doit retourner false: false
+libValidationBase.js:232 estUnCaractereAlphaNumerique(0) doit retourner false: false
+libValidationBase.js:233 estUnCaractereAlphaNumerique(null) doit retourner false: false
+libValidationBase.js:234 estUnCaractereAlphaNumerique(6) doit retourner false: false
+libValidationBase.js:235 estUnCaractereAlphaNumerique(true) doit retourner false: false
+libValidationBase.js:236 estUnCaractereAlphaNumerique('') doit retourner false: false
+libValidationBase.js:237 estUnCaractereAlphaNumerique('6') doit retourner true: true
+libValidationBase.js:238 estUnCaractereAlphaNumerique('d') doit retourner true: true
+libValidationBase.js:239 estUnCaractereAlphaNumerique('a') doit retourner true: true
+libValidationBase.js:240 estUnCaractereAlphaNumerique('D') doit retourner true: true
+libValidationBase.js:241 estUnCaractereAlphaNumerique('ZD') doit retourner false: false
+libValidationBase.js:242 estUnCaractereAlphaNumerique('Z') doit retourner true: true
+libValidationBase.js:243 estUnCaractereAlphaNumerique('z') doit retourner true: true
+libValidationBase.js:244 estUnCaractereAlphaNumerique(',') doit retourner false: false
+libValidationBase.js:245 estUnCaractereAlphaNumerique(' $') doit retourner false: false
+libValidationBase.js:246 estUnCaractereAlphaNumerique('0') doit retourner true: true
+libValidationBase.js:247 estUnCaractereAlphaNumerique(null) doit retourner false: false
+libValidationBase.js:248 estUnCaractereAlphaNumerique(6) doit retourner false: false
+libValidationBase.js:249 estUnCaractereAlphaNumerique(61) doit retourner false: false
+libValidationBase.js:250 estUnCaractereAlphaNumerique('') doit retourner false: false
+libValidationBase.js:251 estUnCaractereAlphaNumerique ('6') doit retourner true: true
+libValidationBase.js:252 estUnCaractereAlphaNumerique('-6') doit retourner false: false
+libValidationBase.js:253 estUnCaractereAlphaNumerique ('61') doit retourner false: false
+libValidationBase.js:254 estUnCaractereAlphaNumerique('D') doit retourner true: true
+libValidationBase.js:255 estUnCaractereAlphaNumerique ('6D') doit retourner false: false
+libValidationBase.js:257 estUnCaractereValide('Q', 'PQR') devrait retourner true : true
+libValidationBase.js:258 estUnCaractereValide('S', 'PQR') devrait retourner false : false
+libValidationBase.js:259 estUnCaractereValide('PQ', 'PQR') devrait retourner false : false
+libValidationBase.js:261 estDansUnFormatValide('G9H 3N6', '@#@ #@#') devrait retourner true : true
+libValidationBase.js:262 estDansUnFormatValide('G9H 3NB', '@#@ #@#') devrait retourner false : false
+libValidationBase.js:263 estDansUnFormatValide('G9H3NB', '@#@ #@#') devrait retourner false : false
+libValidationBase.js:264 estDansUnFormatValide('G9H 3NB', '@#@#@#') devrait retourner false : false
+libValidationBase.js:265 estDansUnFormatValide('G9H  3NB', '@#@ @#@') devrait retourner false : false
+libValidationBase.js:267 estUnCodePostal('G9H 3N6') devrait retourner true : true
+libValidationBase.js:268 estUnCodePostal('G9H 3NB') devrait retourner false : false
+libValidationBase.js:269 estUnCodePostal('G9H3NB') devrait retourner false : false
+libValidationBase.js:270 estUnCodePostal('G9H 3NB') devrait retourner false : false
+libValidationBase.js:271 estUnCodePostal('G9H  3NB') devrait retourner false : false
+libValidationBase.js:273 estUnNAS('235 456 789') devrait retourner true : true
+libValidationBase.js:274 estUnNAS('G9H 235 456 789') devrait retourner false : false
+libValidationBase.js:275 estUnNAS('235456 789') devrait retourner false : false
+libValidationBase.js:276 estUnNAS('G9H 3NB 3NB') devrait retourner false : false
+libValidationBase.js:277 estUnNAS('           ') devrait retourner false : false
+libValidationBase.js:278 estUnNAS('') devrait retourner false : false
+libValidationBase.js:279 estUnNAS(null) devrait retourner false : false
+libValidationBase.js:280 estUnNAS(235456789) devrait retourner false : false
+libValidationBase.js:282 estUnMatricule(1234567) devrait retourner false : false
+libValidationBase.js:283 estUnMatricule('1234567') devrait retourner true : true
+libValidationBase.js:284 estUnMatricule('124567') devrait retourner false : false
+libValidationBase.js:285 estUnMatricule('12 4567') devrait retourner false : false
+libValidationBase.js:286 estUnMatricule('12A4567') devrait retourner false : false
+libValidationBase.js:288 estUnCodePermanent(112312345678) devrait retourner false : false
+libValidationBase.js:289 estUnCodePermanent('ABCd12345678') devrait retourner true : true
+libValidationBase.js:290 estUnCodePermanent('ABCD12345678') devrait retourner true : true
+libValidationBase.js:291 estUnCodePermanent('ABCDE2345678') devrait retourner false : false
+libValidationBase.js:292 estUnCodePermanent(undefined) devrait retourner false : false
+libValidationBase.js:293 estUnCodePermanent(null) devrait retourner false : false
+libValidationBase.js:294 estUnCodePermanent(NaN) devrait retourner false : false
+libValidationBase.js:295 estUnCodePermanent('        ') devrait retourner false : false
+libValidationBase.js:296 estUnCodePermanent(['A','B','C','D','1','2','3','4','5','6','7','8']) devrait retourner false : false
+libValidationBase.js:298 estUnNoDeTelephone(5145645676) devrait retourner false : false
+libValidationBase.js:299 estUnNoDeTelephone('(514) 564-5676') devrait retourner true : true
+libValidationBase.js:300 estUnNoDeTelephone('514 564-5676') devrait retourner true : true
+libValidationBase.js:301 estUnNoDeTelephone('51F 564-5676') devrait retourner false : false
+libValidationBase.js:302 estUnNoDeTelephone('514 5649-676') devrait retourner false : false
+libValidationBase.js:303 estUnNoDeTelephone('514 564-676') devrait retourner false : false
+libValidationBase.js:304 estUnNoDeTelephone('514 5649676') devrait retourner false : false
